@@ -1,3 +1,16 @@
+terraform {
+  required_version = ">= 1.0" 
+}
+
+terraform {
+  required_providers {
+    template = {
+      source  = "hashicorp/aws"
+      version = "~> 2"
+    }
+  }
+}
+
 provider "aws" {
   region = "ap-southeast-1"
 }
